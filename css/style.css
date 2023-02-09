@@ -57,7 +57,7 @@ ul.grid li {
 
 .name {
     color: white;
-    background-color: grey;
+    background-color: rgba(127, 127, 127, 0.5);
     padding: 4px;
     font-size: 0.6rem;
     position: absolute;
@@ -76,6 +76,7 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 10;
+    display: flex;
 
     /* debug */
     background-color: blueviolet;
@@ -89,26 +90,82 @@ footer {
 
 .footer-list-1 {
     display: flex;
+    padding: 10px 0;
 }
 
 .angle-up {
-    display: inline-block;
+    color: white;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 15px;
+    left: 45px;
+}
+
+.angle-up2 {
+    color: white;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 15px;
+    left: 150px;
 }
 
 .micro {
+    font-size: 0.8rem;
     text-align: center;
     color: white;
-    margin-right: 15px;
+    margin-right: 45px;
+    position: relative;
+    margin-left: 5px;
 }
 
 .video {
+    font-size: 0.8rem;
     text-align: center;
     color: white;
 }
 
 .symbol {
     font-size: 1.5rem;
+    color: white;
 }
+
+.end {
+    color: red;
+    font-size: 0.8rem;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 15px;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    /* debug */
+    background-color: blue;
+}
+
+.sign {
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+.menu {
+    padding: 10px 0;
+    position: absolute;
+    left: 200px;
+    display: flex;
+}
+
+.last {
+    display: flex;
+}
+
+ul.last li {
+    margin-right: 20px;
+    text-align: center;
+}
+
 
 
 
