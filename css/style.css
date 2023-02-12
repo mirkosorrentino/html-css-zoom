@@ -10,6 +10,7 @@
     --footer-color: #222222;
     --end-meeting-color: #4A4A4A;
     --share-screen-color: #4BC800;
+    --buttons-color: #4A4A4A;
 }
 
 /* COMMON */
@@ -40,6 +41,23 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+}
+
+/* HEADER */
+
+.buttons {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.button-item {
+    background-color: var(--buttons-color);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.6rem;
 }
 
 /* MAIN */
@@ -86,18 +104,15 @@ footer {
 }
 
 .footer-items {
-    /* position: relative; */
     display: flex;
     height: 70px;
     width: 100%;
-    
-    /* debug */
-    border: 1px dashed white;
 }
 
 .audio-video {
-    width: 20%;
+    width: 12%;
     display: flex;
+    position: relative;
 }
 
 .audio-video-list {
@@ -106,24 +121,26 @@ footer {
     color: white;
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 ul.audio-video-list li {
     width: 100%;
     text-align: center;
-    margin: 0 15px;
+    margin: 0 10px;
     align-items: center;
     position: relative;
-
-    /* debug */
-    border: 1px dashed white;
 }
 
-.angle-up {
+.angle-up1 {
     position: absolute;
-    top: 10;
-    left: 40;
+    top: 13px;
+    left: 60px;
+}
+
+.angle-up2 {
+    position: absolute;
+    top: 13px;
+    left: 70px;
 }
 
 .menu {
@@ -139,10 +156,7 @@ ul.audio-video-list li {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    gap: 10px;
-
-    /* debug */
-    border: 1px dashed white;
+    gap: 15px;
 }
 
 .end {
@@ -164,6 +178,13 @@ ul.audio-video-list li {
 
 .share {
     position: relative;
+    margin-right: 20px;
+}
+
+.angle-up3 {
+    position: absolute;
+    top: 13px;
+    left: 80px;
 }
 
 .end-meeting {
